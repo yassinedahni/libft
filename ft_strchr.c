@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/07 15:15:25 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/12 19:00:54 by ydahni           ###   ########.fr       */
+/*   Created: 2021/11/13 00:25:21 by ydahni            #+#    #+#             */
+/*   Updated: 2021/11/13 00:52:30 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void ft_bzero(void *s, size_t n)
+char *ft_strchr(const char *s, int c)
 {
-    char *p;
-    size_t i = 0;
-    p = (char *)s;
-    int c;
-    c = '\0';
-    while (i <  n)
-    {
-        p[i] =  c;
-        i++;
-    }
+	int		i;
+	char	*n;
+
+    i = 0;
+	n = (char *)s;
+	if (c == 0)
+		return (n + ft_strlen(n));
+	while (n[i])
+	{
+		if (n[i] == (char)c)
+			return (&n[i]);
+		i++;
+	}
+    return (0);
 }
 /*
 int main()
 {
-    char a[] = "yassine";
-    size_t i = 1;
-    ft_bzero(a,i);
-    printf("%s",a);
+    char a[] = "ya.ssi.ne";
+    char b = '.';
+    char *c;
+    
+    c = ft_strchr(a,b);
+    printf("%s",c);
 }*/

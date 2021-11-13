@@ -6,12 +6,11 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:22 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/12 16:18:00 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/12 19:02:32 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
     size_t len;
@@ -33,6 +32,7 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
     dst[i] = '\0';
     return(len);
 }
+/*
 int main()
 {
     char d[] = "yassine";
@@ -42,4 +42,4 @@ int main()
     printf("%s\n",d);
     strlcpy(d,s,n);
     printf("%s",d);
-}
+}*/
