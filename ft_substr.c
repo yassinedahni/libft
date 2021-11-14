@@ -1,40 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/13 00:44:01 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/14 02:21:12 by ydahni           ###   ########.fr       */
+/*   Created: 2021/11/13 16:56:49 by ydahni            #+#    #+#             */
+/*   Updated: 2021/11/14 06:09:13 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strrchr(const char *s, int c)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int		i;
-	char	*n;
-
-	n = (char *)s;
-	if (c == 0)
-		return (n + ft_strlen(n));
-	i = ft_strlen(n);
-	while (i >= 0)
-	{
-		if (n[i] == (char)c)
-			return (&n[i]);
-		i--;
-	}
-	return (0);
+    
+	char	*new;
+	size_t	i;
+	size_t	j;
+    
+    i = 0;
+    j = 0;
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		len = 0;
+	while (i < len && s[i + start])
+		i++;
+	new = malloc(i + 1);
+	if (!new)
+		return (NULL);
+	while (j < i)
+    {
+		new[j++] = s[start++];
+    }
+	new[i] = '\0';
+	return (new);
 }
-/*
-int main()
-{
-    char a[] = "yas.si.ne";
-    char b = '.';
-    char *c;
-
-    c = ft_strrchr(a,b);
-    printf("%s",c);
-}*/

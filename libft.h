@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 12:27:31 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/13 01:13:40 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/14 09:26:21 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
+
 int ft_isalpha(int c);
 int ft_isdigit(int c);
 int ft_isalnum(int c);
@@ -34,7 +36,11 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);
 void *ft_memchr(const void *s, int c, size_t n);
-char *strnstr(const char *str1 , const char *str2, size_t len);
-
+char *ft_strnstr(const char *str1, const char *str2, size_t len);
+int	ft_atoi(const char *str);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *str);
+char *ft_substr(char const *s, unsigned int start,size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
 
 #endif

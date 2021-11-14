@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/13 00:44:01 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/14 02:21:12 by ydahni           ###   ########.fr       */
+/*   Created: 2021/11/14 06:10:27 by ydahni            #+#    #+#             */
+/*   Updated: 2021/11/14 06:10:32 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strrchr(const char *s, int c)
+
+char	*ft_strdup(const char *str)
 {
 	int		i;
-	char	*n;
+	char	*dup;
 
-	n = (char *)s;
-	if (c == 0)
-		return (n + ft_strlen(n));
-	i = ft_strlen(n);
-	while (i >= 0)
+	i = ft_strlen(str);
+	dup = malloc(sizeof(char) * (i + 1));
+	if (dup == NULL)
+		return (NULL);
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (n[i] == (char)c)
-			return (&n[i]);
-		i--;
+		dup[i] = str[i];
+		i++;
 	}
-	return (0);
+	dup[i] = '\0';
+	return (dup);
 }
-/*
-int main()
-{
-    char a[] = "yas.si.ne";
-    char b = '.';
-    char *c;
-
-    c = ft_strrchr(a,b);
-    printf("%s",c);
-}*/

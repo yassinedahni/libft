@@ -1,40 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/13 00:44:01 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/14 02:21:12 by ydahni           ###   ########.fr       */
+/*   Created: 2021/11/14 06:06:23 by ydahni            #+#    #+#             */
+/*   Updated: 2021/11/14 06:07:41 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strrchr(const char *s, int c)
-{
-	int		i;
-	char	*n;
 
-	n = (char *)s;
-	if (c == 0)
-		return (n + ft_strlen(n));
-	i = ft_strlen(n);
-	while (i >= 0)
-	{
-		if (n[i] == (char)c)
-			return (&n[i]);
-		i--;
-	}
-	return (0);
+void	*ft_calloc(size_t count, size_t size)
+{
+	char	*a;
+	size_t	i;
+
+	i = count * size;
+	a = malloc(i);
+	if (a == 0)
+		return (NULL);
+	ft_bzero(a, i);
+	return (a);
 }
-/*
-int main()
-{
-    char a[] = "yas.si.ne";
-    char b = '.';
-    char *c;
-
-    c = ft_strrchr(a,b);
-    printf("%s",c);
-}*/
