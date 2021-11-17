@@ -1,28 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/05 12:39:09 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:57:42 by ydahni           ###   ########.fr       */
+/*   Created: 2021/11/16 03:09:42 by ydahni            #+#    #+#             */
+/*   Updated: 2021/11/17 03:38:27 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int	chercheset(char c, const char *s)
 {
-	if (c >= 32 && c <= 126)
+	int	i;
+
+	i = 0;
+	while (s[i])
 	{
-		return (1);
+		if (s[i] == c)
+			return (1);
+		i++;
 	}
-	else
-		return (0);
+	return (0);
 }
-/*int main()
+
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char a = '\n';
-    printf("%d", ft_isprint(a));
-}*/
+	int		i;
+	int		j;
+	char	*s;
+
+	if (!s1 || !set)
+		return (NULL);
+	s = (char *)s1;
+	i = 0;
+	j = ft_strlen(s1) - 1;
+	while (s[i] && chercheset(s[i], set))
+		i++;
+	while (j > 0 && chercheset(s[j], set))
+		j--;
+	return (ft_substr(s, i, j - i + 1));
+}

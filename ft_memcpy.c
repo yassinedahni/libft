@@ -6,26 +6,29 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:12 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/12 15:34:27 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/17 02:06:37 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memcpy(void *dst,const void *src, size_t n)
-{
-    char *d = (char *)dst;
-    const char *s = (char *)src;
-    size_t i;
 
-   i = 0;
-   if (s == d)
-        return(d);
-    while (i < n)
-    {
-        d[i] =  s[i];
-        i++;
-    }
-    return(dst);
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	char		*d;
+	const char	*s;
+	size_t		i;
+
+	d = (char *)dst;
+	s = (char *)src;
+	i = 0;
+	if (s == d)
+		return (d);
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dst);
 }
 /*int main()
 {

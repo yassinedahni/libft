@@ -6,12 +6,13 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 00:44:01 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/14 02:21:12 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/17 03:21:17 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strrchr(const char *s, int c)
+
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*n;

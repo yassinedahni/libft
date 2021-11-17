@@ -6,20 +6,20 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:30:01 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/12 02:51:42 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/17 03:42:07 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
-int ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-    {
-        return(1);
-    }
-    else
-        return(0);
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	else
+		return (0);
 }
 /*
 int main()
