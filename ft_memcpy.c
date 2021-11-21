@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:12 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 02:06:37 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 05:24:50 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,14 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*int main()
+
+int main()
 {
     char s[] = "yassine";
-    char d[] = "dahni";
+    char *d = NULL;
     size_t n = 13;
     ft_memcpy(d,s,n);
     printf("%s\n",d);
-    memcpy(d,s,n);
-    printf("%s",d);
-}*/
+    // memcpy(d,s,n);
+    // printf("%s",d);
+}

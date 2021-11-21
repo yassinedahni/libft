@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 02:39:06 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:44:46 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/19 01:57:41 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,16 @@ int	ft_atoi(const char *str)
 		return (-1);
 	return (c * r);
 }
-
-// int main()
-// {
-//     char b []= "---+5";
-//     int x;
-//     x = ft_atoi(b);
-//     printf("%d\n",x);
-// 	x = atoi(b);
-//     printf("%d",x);
-// }
+/*
+ int main()
+ {
+     char b []= "-92233720368547758088999999999999999999998999999";
+    int x;     
+	x = ft_atoi(b);     
+	printf("%d\n",x);
+ 	x = atoi(b);
+     printf("%d",x);
+ }*/
 /*
 int main () {
    int val;

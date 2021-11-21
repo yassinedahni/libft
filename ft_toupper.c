@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:34:11 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 03:40:54 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 02:43:04 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,15 @@ int	ft_toupper(int c)
 /*
 int main()
 {
-    printf("%c",ft_toupper('a'));
+	char x[] = "hello";
+	int i;
+	
+	
+	i = 0;
+	while (x[i])
+	{
+		
+		printf("%c",ft_toupper(x[i]));
+		i++;
+	}
 }*/

@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:15 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 02:11:57 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/20 02:55:37 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /*
 int main()
 {
-    char d[] = "yassine";
-    char s[] = "dahni";
-    ft_memmove(d,s,5);
-    printf("%s\n",d);
-    memmove(d,s,5);
-    printf("%s",d);
+    int a[] = {10,11,12,13};
+	ft_memmove(a + 2, a, sizeof(int *) * 2); 
+	int i = 0;
+	while (i < 4)
+	{
+		printf("%d\n",a[i]);
+		i++;
+	}
 
 }
 */
