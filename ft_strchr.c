@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 00:25:21 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 02:19:44 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:50 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-int main()
-{
-    char a[] = "ya.ssi.ne";
-    char b = '.';
-    char *c;
-    
-    c = ft_strchr(a,b);
-    printf("%s",c);
-}*/

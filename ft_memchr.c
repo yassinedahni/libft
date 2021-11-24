@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 00:56:56 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:59:13 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:27 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int main()
-{
-    char a[] = "yas.s.in.e";
-    char b = '.';
-    char *x;
-
-    x = ft_memchr(a,b,1);
-    printf("%s\n",x);
-     x = memchr(a,b,1);
-    printf("%s",x);
-}*/

@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:38:59 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 03:40:18 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:15:33 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-/*
-int main()
-{
-    printf("%c",ft_tolower('3'));
-}*/

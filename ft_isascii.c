@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:34:16 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:55:17 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:10 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
-int main()
-{
-    int a = 128;
-    printf("%d",ft_isascii(128));  
-}
-*/

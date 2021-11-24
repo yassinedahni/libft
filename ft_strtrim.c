@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 03:09:42 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/20 18:46:07 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 21:31:34 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s, i, j - i + 1));
 }
-/*
-int main()
-{
-	
-	printf("%s",ft_strtrim("abs yassine bc","abc"));
-}*/

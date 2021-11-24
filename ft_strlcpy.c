@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:22 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 03:36:06 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:15:08 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (len);
 }
-/*
-int main()
-{
-    char d[] = "yassine";
-    char s[] = "dahni";
-    size_t n = 0;
-    ft_strlcpy(d,s,n);
-    printf("%s\n",d);
-    strlcpy(d,s,n);
-    printf("%s",d);
-}*/

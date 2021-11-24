@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:39:09 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:57:42 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:16 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-/*int main()
-{
-    char a = '\n';
-    printf("%d", ft_isprint(a));
-}*/

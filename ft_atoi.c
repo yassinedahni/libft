@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 02:39:06 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/19 01:57:41 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:13:51 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,28 +40,3 @@ int	ft_atoi(const char *str)
 		return (-1);
 	return (c * r);
 }
-/*
- int main()
- {
-     char b []= "-92233720368547758088999999999999999999998999999";
-    int x;     
-	x = ft_atoi(b);     
-	printf("%d\n",x);
- 	x = atoi(b);
-     printf("%d",x);
- }*/
-/*
-int main () {
-   int val;
-   char str[20];
-   
-   strcpy(str, "98993489");
-   val = ft_atoi(str);
-   printf("String value = %s, Int value = %d\n", str, val);
-
-   strcpy(str, "tutorialspoint.com");
-   val = ft_atoi(str);
-   printf("String value = %s, Int value = %d\n", str, val);
-
-   return(0);
-}*/

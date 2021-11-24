@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 17:03:14 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 03:32:22 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:15:00 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[a] = '\0';
 	return (p);
 }
-/*
-int main()
-{
-    char a[] = "yassine";
-    char b[] = "dahni";
-    char *x;
-    x = ft_strjoin(a,b);
-    printf("%s",x);
-}*/

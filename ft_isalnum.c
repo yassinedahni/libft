@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:22:39 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:52:58 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:04 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-int main()
-{
-    char a = '+';
-    printf("%d",ft_isalnum(a));
-}*/

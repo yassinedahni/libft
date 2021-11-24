@@ -6,12 +6,12 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 04:08:28 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/21 05:42:51 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/23 04:31:23 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 int	ft_counterword(char const *s, char c)
 {
 	int	i;
@@ -70,13 +70,13 @@ char	**ft_split(char const *s, char c)
 	new[j] = NULL;
 	return (new);
 }
-// int main()
-// {
-// 	char **a =  ft_split("+++++hhhh++am+++zaboukililn", '+');
-// 	int  i = 0;
-// 	while (a[i])
-// 	{
-// 		printf("|%s|\n",a[i]);
-// 		i++;
-// 	}
-// }
+int main()
+{
+	char **a = ft_split("++++hhh++h+h+++h+",'+');
+	int i = 0;
+	while (a[i])
+	{
+		printf("|%s|\n",a[i]);
+		i++;
+	}
+}

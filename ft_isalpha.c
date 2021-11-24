@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:28:21 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/17 01:54:09 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/21 19:14:07 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*
-int main()
-{
-    char a = '1';
-    printf("%d",ft_isalpha(a));
-}*/
